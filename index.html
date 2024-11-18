@@ -21,47 +21,58 @@
         <div class="div1">
             <div class="cercle draggable">
                 <img src="./images/sona.jpg" alt="">
+                
             </div> 
+            <p>Sona</p>
         </div>
         <div class="div2">
             <div class="cercle draggable">
+                
                 <img src="./images/kaisa.png" alt="">
             </div> 
+            <p>Kai'sa</p>
         </div>
         <div class="div3">
             <div class="cercle draggable">
-                <img src="./images/2B 🤍.jpg" alt="">
+                <img src="./images/2B.jpg" alt="">
             </div> 
+            <p>2B</p>
         </div>
         <div class="div4"> 
             <div class="cercle draggable">
                 <img src="./images/jinx1.jpg" alt="">
             </div>
+            <p>Jinx Arcane v1</p>
         </div>
         <div class="div5"> 
             <div class="cercle draggable">
                 <img src="./images/jinx2.jpg" alt="">
             </div>
+            <p>Jinx Arcane v2</p>
         </div>
         <div class="div6"> 
             <div class="cercle draggable">
                 <img src="./images/jinx3.jpg" alt="">
             </div>
+            <p>Jinx Arcane neko</p>
         </div>
         <div class="div7"> 
             <div class="cercle draggable">
                 <img src="./images/kokomi1.jpg" alt="">
             </div>
+            <p>Kokomi</p>
         </div>
         <div class="div8"> 
             <div class="cercle draggable">
                 <img src="./images/yoimiya.jpg" alt="">
             </div>
+            <p>Yoimiya</p>
         </div>
         <div class="div9"> 
             <div class="cercle draggable">
                 <img src="./images/hutao.jpg" alt="">
             </div>
+            <p>Ju Tao</p>
         </div>
     </section>
     <br>
@@ -71,20 +82,6 @@
     <br>
 
     <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
-    <script>
-        // Si il y a plusieurs éléments .draggable
-        // Obtenir tous les éléments Draggie
-        var draggableElems = document.querySelectorAll('.draggable');
-        // array of Draggabillies
-        var draggies = []
-        // init Draggabillies
-        for ( var i=0; i < draggableElems.length; i++ ) {
-        var draggableElem = draggableElems[i];
-        var draggie = new Draggabilly( draggableElem, {
-            // options...
-        });
-        draggies.push( draggie );
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
