@@ -1,28 +1,82 @@
-/*CONFIGURATION DES PAGES*/
+:root {
+    --card_width: 350px;
+    --row_increment: 10px;
+    --card_border_radius: 16px;
+    --card_small: 33;
+    --card_med: 45;
+    --card_large: 53;
+}
+
+/*  --------  CONFIGURATION DES PAGES  --------  */
 body {
-    margin: 2%;
+    margin: 0%;
     font-family: sans-serif;
+    background: rgb(210, 196, 196);
 }
 
 
-/*CONFIGURATION DES TEXTES*/
+/*  --------  CONFIGURATION DES TEXTES  --------  */
 h1 {
     text-align: center;
+    
 }
 
 h2 {
-
+    margin-left: 2%;
 }
 
-/*CONTAINER*/
+/*  --------  HEADER  --------  */
+header {
+    background-color: rgb(232, 232, 232);
+    height: 5%;
+    margin: 0%;
+}
 
+nav, ul, li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
 
-/*SECTIONS 1*/
+ul, li, a {
+    color: #000000;
+    letter-spacing: 0.1rem;
+}
+
+ul, li, a:hover{
+    color: rgb(63, 0, 0);
+}
+
+.menu {
+    margin: 0%;
+    display: flex;
+    justify-content:space-around;
+}
+
+.menu a{
+    display: block;
+    min-width: 120px;
+    margin: 0.5rem;             
+    padding: 0.5rem 0;
+    text-align: center;
+    color: #000000; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+    transition: all 1s ;        /* Ajout des effets de transition */
+}
+
+.menu a:hover{
+    color: rgb(210, 196, 196);
+}
+
+/*  --------  SECTIONS 1  --------  */
 /*CONFIGURATION DES SECTIONS*/
 #section1 {
-    width: 100%;
+    margin: 2%;
+    width: 96%;
     height: 100vh; /*vh = vue de la fenètre*/
-    background: gainsboro;
+    background: rgb(232, 232, 232);
     border-radius: 2%;
     position: relative;
 }
@@ -71,12 +125,13 @@ h2 {
 
 
 
-/*SECTIONS 2*/
+/*  --------  SECTIONS 2  --------  */
 /*CONFIGURATION DES SECTIONS*/
 #section2 {
-    width: 100%;
+    margin: 2%;
+    width: 96%;
     height: fit-content;
-    background: rgb(201, 201, 201);
+    background: rgb(232, 232, 232);
     border-radius: 2%;
     display: grid;
     grid-template-columns: repeat(3,);
@@ -84,6 +139,7 @@ h2 {
     text-align: center;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    padding-top: 2%;
 }
 
 /*CONFIGURATION DES FORMES*/
@@ -103,7 +159,7 @@ h2 {
     opacity: 50%;
 }
 
-/*CONFIGURATION DE LA GRILLE*/ 
+/*  --------  CONFIGURATION DE LA GRILLE  --------  */ 
 .div1 { grid-area: 1 / 1 / 2 / 2; }
 .div2 { grid-area: 1 / 2 / 2 / 3; }
 .div3 { grid-area: 1 / 3 / 2 / 4; }
@@ -113,3 +169,103 @@ h2 {
 .div7 { grid-area: 3 / 1 / 4 / 2; }
 .div8 { grid-area: 3 / 2 / 4 / 3; }
 .div9 { grid-area: 3 / 3 / 4 / 4; }
+
+/*  --------  SECTIONS 3  --------  */
+/*CONFIGURATION DES SECTIONS*/
+#section3 {
+    margin: 2%;
+    width: 96%;
+    height: 100vh; /*vh = vue de la fenètre*/
+    background: rgb(232, 232, 232);
+    border-radius: 2%;
+    position: relative; /* Important pour contenir les enfants absolus */
+    overflow: hidden; /* Empêche les débordements des enfants */
+}
+#section3 img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5%;
+    position: absolute; /* Nécessaire pour le positionnement aléatoire */
+    overflow: hidden;
+}
+
+.positionPor {
+    width: 200px;
+    height: 300px;
+    border-radius: 10%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+.positionPay {
+    width: 300px;
+    height: 200px;
+    border-radius: 10%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+.positionPay {
+    width: 300px;
+    height: 200px;
+    border-radius: 10%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+/*  --------  presentation  --------  */
+/*CONFIGURATION DES SECTIONS*/
+#section_presentation {
+    color: rgb(75, 75, 224);
+    width: 100%;
+    margin: 0px;
+    border: 0px;
+}
+
+#section_presentation img{
+    width: 100%;
+}
+
+#section_presentation p{
+    margin: 2%;
+}
+
+/*AFFICHAGE PINTEREST*/ 
+.pin_container {
+    margin-top: 5%;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    columns: 100px 4;
+    column-gap: 15px; /*ajout*/
+    justify-content: center;
+}
+
+.card {
+    padding: 0;
+    margin: 15px 10px;
+    border-radius: var(--card_border_radius);
+    background-color: rgb(178, 178, 178);
+    overflow: hidden;
+    display: flex; /*ajout*/
+    flex-direction: column; /*ajout*/
+    align-self: start; /*ajout*/
+    position: relative; /*ajout*/
+    break-inside: avoid;
+}
+.card img{
+    width: 100%;
+    height: auto; /* Maintient le ratio d'aspect */
+    display: block; /*ajout*/
+    object-fit: cover; /* Coupe l'image si elle dépasse, tout en la centrant */
+    object-position: center;
+}
+
+.card-1 {
+    margin-top: 0;
+}
