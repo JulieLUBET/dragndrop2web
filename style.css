@@ -175,7 +175,7 @@ ul, li, a:hover{
 #section3 {
     margin: 2%;
     width: 96%;
-    height: 100vh; /*vh = vue de la fenètre*/
+    height: 200vh; /*vh = vue de la fenètre*/
     background: rgb(232, 232, 232);
     border-radius: 2%;
     position: relative; /* Important pour contenir les enfants absolus */
@@ -207,8 +207,8 @@ ul, li, a:hover{
     top: 10%;
 }
 
-.positionPay {
-    width: 300px;
+.positionP {
+    width: 200px;
     height: 200px;
     border-radius: 10%;
     position: absolute;
