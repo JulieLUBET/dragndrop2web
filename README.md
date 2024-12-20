@@ -1,18 +1,8 @@
 # Portfolio Cosplay
 
-## pour faire une visualisations de la page : 
+## Journal de bord de mon projet. 
 
-### Exemple de style de text
-
-Journal de bord de mon projet. 
-_italique_ 
-**gras** 
-**_gras-italique_** 
-~~barré~~ 
-
-```bloc de code```
-
-Exemple [de lien](https://docs.framasoft.org/fr/grav/markdown.html)
+Exemple [du figma](https://www.figma.com/design/9zEj86XcOb8G5foUEq8gcS/Task-Manager-App?node-id=115-2&m=dev)
 
 ![moi](images/moi.webp)
 
@@ -26,29 +16,28 @@ L'objectif de ce projet était de créer un portfolio pour mettre en valeur ma d
 
 ![moi](images/readme/page%20d'accueil.png)
 
-La galerie est la pour mettre en avant tous mes shooting cosplay.
+La galerie est là pour mettre en avant tous mes shooting cosplay.
 
 ![moi](images/readme/gallerie.png)
 
-Ma partie créations sert a mettre en avant les réalisations que j'ai pu faire ou celles qui sont en cour ou a venir. Elle sont la pour mettre en avant mes compétences. Et penvent maider a vendre mes services.
+Ma partie créations sert à mettre en avant les réalisations que j'ai pu faire ou celles qui sont en cours ou à venir. Elles sont là pour mettre en avant mes compétences. Et penvent m'aider à vendre mes services.
 
 ![moi](images/readme/créations.png)
 
-J'ai séparée en 4 grandes catégorie mes cosplay. Dans chaque catégorie on pourras voyager a travers les differents cosplays qui la concerne. Et cliquer sur celui qui nous intéresse pour plus de renseignement. 
+J'ai séparé en 4 grandes catégories mes cosplays. Dans chaque catégorie, on pourra voyager à travers les différents cosplays qui la concernent. Et cliquer sur celui qui nous intéresse pour plus de renseignements. 
 
 ![moi](images/readme/GENSHIN.png)
 
-Pour le moment les images aparaissent au meme endroit mais jai pour objectif de les faire apparaitre plus dans un design comme celui la.
+Pour le moment les images apparaissent au même endroit mais j'ai pour objectif de les faire apparaître plus dans un design comme celui-là.
 
 ![moi](images/readme/LOL.png)
 
-Voici a quoi ressemble une page lorsque lon clique sur le cosplay que lon veux voir.
+Voici à quoi ressemble une page lorsque l'on clique sur le cosplay que l'on veut voir.
 
 ![moi](images/readme/Jinx.png)
 
-Cela est également un autre exemple de design si le shooting na pas encore ete réalisé ou publié.
+Cela est également un autre exemple de design si le shooting n'a pas encore été réalisé ou publié.
 
 ![moi](images/readme/jinx%20s2.png)
 
-3. Focus (points de détails du projet : code, images...)
-4. La structure du projet (navigation, pages...)
+
