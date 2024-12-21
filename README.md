@@ -40,8 +40,5 @@ Cela est également un autre exemple de design si le shooting n'a pas encore ét
 
 ![moi](images/readme/jinx%20s2.png)
 
-3. Focus (points de détails du projet : code, images...)
 
-
-4. La structure du projet (navigation, pages...)
 

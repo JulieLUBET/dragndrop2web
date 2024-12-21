@@ -125,38 +125,27 @@ ul, li, a:hover{
     grid-row-gap: 0px;
 }
 
-.categorie > div {
-    position: relative; /* Pour superposer les images */
-    width: 100%;
-    padding-top: 56.25%; /* Maintient une proportion (16:9 ici) */
-    background-size: cover;
-    background-position: center;
-    transition: background-image 0.3s ease-in-out;
+.categorie > div img {
+    width: 100%; /* L'image prend toute la largeur de son conteneur */
+    height: 100%; /* L'image prend toute la hauteur de son conteneur */
+    object-fit: cover; /* Garde les proportions, rogne l'excès */
 }
 
-.categorie > div a {
-    position: absolute; /* Lien positionné par rapport au conteneur parent */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-decoration: none; /* Supprime les soulignements (facultatif) */
-    z-index: 10; /* S'assure que le lien est cliquable au-dessus */
+.categorie1:hover img {
+    content: url('images/Bannière/genshin_hover.png'); /* Change l'image au survol */
 }
 
-    
-.categorie1 { background-image: url('/images/Bannière/genshin.png');}
-.categorie1:hover {background-image: url('/images/Bannière/genshin_hover.png');}
+.categorie2:hover img {
+    content: url('images/Bannière/lol_hover.png');
+}
 
-.categorie2 {background-image: url('/images/Bannière/lol.png');}
-.categorie2:hover {background-image: url('/images/Bannière/lol_hover.png');}
+.categorie3:hover img {
+    content: url('images/Bannière/manga_hover.png');
+}
 
-.categorie3 {background-image: url('/images/Bannière/manga.png');}
-.categorie3:hover {background-image: url('/images/Bannière/manga_hover.png');}
-
-.categorie4 {background-image: url('/images/Bannière/onepiece.png');}
-.categorie4:hover {background-image: url('/images/Bannière/onepiece_hover.png');}
-
+.categorie4:hover img {
+    content: url('images/Bannière/onepiece_hover.png');
+}
 
 /*  --------  galerie  --------  */
 /*CONFIGURATION DES SECTIONS*/
