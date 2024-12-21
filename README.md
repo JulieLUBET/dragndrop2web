@@ -41,4 +41,3 @@ Cela est également un autre exemple de design si le shooting n'a pas encore ét
 ![moi](images/readme/jinx%20s2.png)
 
 
-
