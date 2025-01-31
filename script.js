@@ -45,3 +45,63 @@ for (var i = 0; i < draggableElems.length; i++) {
 
     draggies.push(draggie);
 }
+
+
+// essai d'affichage des panneau cosplay
+
+document.addEventListener("DOMContentLoaded", function () {
+    var panneauCosplay = document.querySelector("#panneau_cosplay");
+
+    if (panneauCosplay) {
+        var panneauWidth = panneauCosplay.offsetWidth;
+        var panneauHeight = panneauCosplay.offsetHeight;
+        var draggableCosplayElems = panneauCosplay.querySelectorAll(".draggable");
+        var placedPositions = []; // Stocke les positions déjà prises
+
+        draggableCosplayElems.forEach(function (elem) {
+            var elemWidth = elem.offsetWidth;
+            var elemHeight = elem.offsetHeight;
+            var maxAttempts = 50; // Nombre max de tentatives pour éviter les superpositions
+            var attempts = 0;
+            var positionValid = false;
+            var randomX, randomY;
+
+            while (!positionValid && attempts < maxAttempts) {
+                randomX = Math.random() * (panneauWidth - elemWidth);
+                randomY = Math.random() * (panneauHeight - elemHeight);
+                positionValid = true;
+
+                // Vérifier la collision avec les autres images déjà placées
+                for (var i = 0; i < placedPositions.length; i++) {
+                    var other = placedPositions[i];
+                    if (
+                        randomX < other.x + other.width &&
+                        randomX + elemWidth > other.x &&
+                        randomY < other.y + other.height &&
+                        randomY + elemHeight > other.y
+                    ) {
+                        positionValid = false;
+                        break; // Sort de la boucle dès qu'une collision est détectée
+                    }
+                }
+                attempts++;
+            }
+
+            // Si on a trouvé une position sans superposition, on place l'image
+            elem.style.left = randomX + "px";
+            elem.style.top = randomY + "px";
+
+            // Enregistrer la position de cette image
+            placedPositions.push({ x: randomX, y: randomY, width: elemWidth, height: elemHeight });
+        });
+
+        // Initialisation des Draggabilly
+        var cosplayDraggies = [];
+        draggableCosplayElems.forEach(function (elem) {
+            var draggie = new Draggabilly(elem, {
+                containment: panneauCosplay, // Garde les éléments à l'intérieur de la section
+            });
+            cosplayDraggies.push(draggie);
+        });
+    }
+});
